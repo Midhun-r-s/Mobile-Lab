@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0E506E"
+    tools:context=".MainActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="307dp"
+        android:layout_height="432dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.27"
+        android:background="@drawable/edittextsyle"
+        >
+
+        <EditText
+            android:id="@+id/number"
+            android:layout_width="220dp"
+            android:layout_height="50dp"
+            android:background="@drawable/edittextsyle"
+            android:ems="10"
+            android:hint="enter the number"
+            android:inputType="textPersonName"
+            android:paddingLeft="15dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#61FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.196" />
+
+        <EditText
+            android:id="@+id/range"
+            android:layout_width="220dp"
+            android:layout_height="50dp"
+            android:background="@drawable/edittextsyle"
+            android:ems="10"
+            android:hint="enter the range"
+            android:inputType="textPersonName"
+            android:paddingLeft="15dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#61FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/number" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="104dp"
+            android:layout_height="52dp"
+
+            android:background="@drawable/buttonstyle"
+            android:text="SUBMIT"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/range" />
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>
